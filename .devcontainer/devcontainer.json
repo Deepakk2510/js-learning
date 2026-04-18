@@ -7,7 +7,6 @@
 	"features": {
 		"ghcr.io/devcontainers/features/git-lfs:1": {
 			"autoPull": true,
-			"installDirectlyFromGitHubRelease": true,
 			"version": "latest"
 		},
 		"ghcr.io/devcontainers-extra/features/git-lfs:1": {
