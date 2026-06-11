@@ -16,7 +16,7 @@ let userEmail;
 const id = Symbol('123') // unique hota hai
 const anotherId = Symbol('123') // alag hoga
 
-console.log(id === anotherId);
+//console.log(id === anotherId);
 
 const bigNumber = 345673897292793862757353757n
 
@@ -38,11 +38,37 @@ const myFunction = function(){
 
 //how to know the datatype
 
-console.log(typeof bigNumber); //bigint
+// console.log(typeof bigNumber); //bigint
 
-console.log(typeof outsideTemp); // null ka bhi object aata hai
-console.log(typeof heroes); // object
-console.log(typeof myFunction); // function
-console.log(typeof id); // symbol ka symbol aata hai
+// console.log(typeof outsideTemp); // null ka bhi object aata hai
+// console.log(typeof heroes); // object
+// console.log(typeof myFunction); // function
+// console.log(typeof id); // symbol ka symbol aata hai
 
 
+// Stack(Primitive) , Heap (Non - Primitive)
+//Stack mein variable ka copy milta hai
+//Heap mein original value ka refernece milta hai->changes original mein honge
+
+let myYoutubeName = "deepakkanojiya"
+
+let anothername = myYoutubeName
+//copy mein changes
+anothername = "deepakk"
+
+console.log(myYoutubeName);
+console.log(anothername);
+
+//heap mein jayega
+let user1 = {
+    email : "user@gmail.com",
+    upi: "user1"
+}
+
+//heap se reference milega 
+let user2 = user1
+
+user2.email = "user2@gmail.com"
+
+console.log(user1);
+console.log(user2);
